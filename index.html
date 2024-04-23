@@ -48,36 +48,38 @@ display: inline-block;
 } 
     .collage {
   position: relative;
-  width: 600px; /* Adjust the width as desired */
-  height: 400px; /* Adjust the height as desired */
+  width: 900px; /* Adjust the width as desired */
+  height: 500px; /* Adjust the height as desired */
 }
-
 .collage img {
-  position: absolute;
-  width: 200px; /* Adjust the width of individual images */
-  height: 150px; /* Adjust the height of individual images */
-  object-fit: cover; /* Maintain aspect ratio and crop the image */
+  position: sticky;
+  width: 200px;
+  height: 170px;
+  object-fit: contain;
 }
 
-/* Position individual images */
 .collage img:nth-child(1) {
   top: 0;
   left: 0;
-  transform: rotate(-5deg);
+  transform: rotate(-10deg);
 }
 
 .collage img:nth-child(2) {
   top: 50px;
   left: 150px;
-  transform: rotate(10deg);
+  transform: rotate(30deg);
 }
-
-.collage img:nth-child(3) {
+ .collage img:nth-child(3) {
   top: 200px;
   left: 300px;
   transform: rotate(-15deg);
 }
- 
+
+.collage img:nth-child(4) {
+  top: 300px;
+  left: 450px;
+  transform: rotate(20deg);
+}
   }
 
 </style>
@@ -91,7 +93,7 @@ display: inline-block;
 <a href="https://gilbertcamps.github.io/haikuu-lc/" class="buttontwo"> you will sleep tonight </a>
 
 <div class="collage">
-  <img src="phoneone.jpg" alt="image of a girl staring at her phone in the dark">
+  <img src="phoneone.jpg" alt="image of a girl staring at her phone in the dark" class="imgone">
   <img src="phonetwo.jpg" alt="a salient phone">
   <img src="sorcone.jpeg" alt="magician with magic coming out of their hand">
    <img src="phonethree.jpg" alt="someone sleeping next to their phone">
