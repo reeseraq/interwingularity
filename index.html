@@ -46,6 +46,37 @@ display: inline-block;
   right: 175px;
   bottom: 10%;
 } 
+    .collage {
+  position: relative;
+  width: 600px; /* Adjust the width as desired */
+  height: 400px; /* Adjust the height as desired */
+}
+
+.collage img {
+  position: absolute;
+  width: 200px; /* Adjust the width of individual images */
+  height: 150px; /* Adjust the height of individual images */
+  object-fit: cover; /* Maintain aspect ratio and crop the image */
+}
+
+/* Position individual images */
+.collage img:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform: rotate(-5deg);
+}
+
+.collage img:nth-child(2) {
+  top: 50px;
+  left: 150px;
+  transform: rotate(10deg);
+}
+
+.collage img:nth-child(3) {
+  top: 200px;
+  left: 300px;
+  transform: rotate(-15deg);
+}
  
   }
 
@@ -60,10 +91,11 @@ display: inline-block;
 <a href="https://gilbertcamps.github.io/haikuu-lc/" class="buttontwo"> you will sleep tonight </a>
 
 <div class="collage">
-  <img src="image1.jpg" alt="Image 1">
-  <img src="image2.jpg" alt="Image 2">
-  <img src="image3.jpg" alt="Image 3">
-  <!-- Add more <img> elements as needed -->
+  <img src="phoneone.jpg" alt="image of a girl staring at her phone in the dark">
+  <img src="phonetwo.jpg" alt="a salient phone">
+  <img src="sorcone.jpeg" alt="magician with magic coming out of their hand">
+   <img src="phonethree.jpg" alt="someone sleeping next to their phone">
+
 </div>
 <!-- idea for the look of this website, this could be a collage with the middle line being in "found images" that are interwoven in the website-->
 
